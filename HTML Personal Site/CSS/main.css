@@ -1,11 +1,8 @@
-body {
-    padding: 25px;
-    background-color: #F5EFE6;
-    color: black;
-    font-size: 25px;
-  }
-  
-.dark-mode {
-    background-color: #2C3333;
-    color: white;
-  }
+body.light-theme {
+  color: #222;
+  background-color: #F5EFE6;
+}
+body.dark-theme {
+  color: #eee;
+  background-color: #2C3333;
+}
