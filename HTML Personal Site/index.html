@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <title>Albert's Personal Site</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"><img src="img/YT watermark_v1.png" width="60px" alt="A-logo"></div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li class="services">
+              <a href="/">Settings</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><button onclick="myFunction()">Toggle dark mode</button></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 3</a></li>
+                <li><a href="/">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+
+    <section class="main_page">
+        <table cellspacing="20">
+            <tr>
+                <td><img src="img/albert.png" alt="albert profile picture"></td>
+                <td><h1 class="name">Albert Nordli</h1>
+                    <p class="achievements"><em>Im just me</em></p>
+                    <p class="about me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugiat <br>
+                        maxime voluptatum asperiores aliquam, ratione omnis quod vel quasi aperiam <br>
+                        cum consequuntur qui tempore sit explicabo dicta eligendi eius! Non?</p></td>
+            </tr>
+        </table>
+    
+        <hr>
+        <h3 class="header">Education</h3>
+
+        <ul>
+            <li><p class="education">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Impedit illo exercitationem mollitia eum voluptates consectetur <br>
+            a quasi esse amet assumenda repudiandae, deleniti sequi itaque earum <br>
+            netur debitis inventore voluptatem maiores.</p></li>
+            <br>
+            <li><p class="education">ipsum, dolor sit amet consectetur adipisicing elit. Nemo beatae <br>
+         exercitationem officiis tenetur accusantium error possimus dolores quam maiores, <br>
+            dignissimos eligendi deserunt placeat aliquid temporibus sit quaerat illo veniam eaque?</p></li> <br>
+        </ul>
+
+        <hr>
+
+        <h3 class="header">Skills</h3>
+
+        <table cellspacing="10">
+            <tr>
+                <td><p>blabla</p>
+                    <p>blabla</p>
+                    <p>blabla</p></td>
+                <td><p>⭐⭐⭐</p>
+                    <p>⭐⭐</p>
+                    <p>⭐⭐⭐⭐</p></td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <section class="local_links">
+            <a href="hobbies.html">My Hobbies</a>
+            <br>
+            <a href="contact.html">Contact Me</a>
+        </section>
+</section>
+
+</body>
+
+</html>

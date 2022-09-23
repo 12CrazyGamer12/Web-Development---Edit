@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>My hobbies</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"><img src="img/YT watermark_v1.png" width="60px" alt="A-logo"></div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li class="services">
+              <a href="/">Settings</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><button onclick="myFunction()">Toggle dark mode</button></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 3</a></li>
+                <li><a href="/">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+
+    <section class="hobbies_page">
+        <header class="local_links">
+            <a href="index.html" title="Home" class="imglink"><img src="img/home_button.png" width="30px" alt="Image"  class="img-responsive" id="electricone"></a>
+        </header>
+
+        <hr>
+
+        <h1><strong>Hobbies</strong></h1>
+
+        <ul>
+            <li><a href="https://www.instagram.com/albert_nordli06/">Mountain Biking (MTB)</a> <br>
+                <a href="https://www.youtube.com/channel/UClKEOi9nuiyYSXlEsRRtGoA">(I also have an YT channel on this)</a></li>
+            <li><a href="https://www.youtube.com/channel/UCPORwSx6_1e00INnAdrkDHg">Making YouTube Videos</a></li>
+            <li>Gaming</li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
